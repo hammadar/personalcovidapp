@@ -23,17 +23,113 @@ struct ContentView: View {
     @State var checkedTerr = false
     
     var body: some View {
-        HStack(alignment: .top) {
-            Button(action: {
-                self.checkedON.toggle()
-            })
-            {
-                HStack {
-                    CheckBoxView(checked: $checkedON)
-                    Text("ON")
+        VStack(alignment:.leading) {
+            HStack(alignment: .top) {
+                Button(action: {
+                    self.checkedON.toggle()
+                })
+                {
+                    HStack {
+                        CheckBoxView(checked: $checkedON)
+                        Text("ON")
+                    }
+                }
+                Button(action: {
+                    self.checkedQC.toggle()
+                })
+                {
+                    HStack {
+                        CheckBoxView(checked: $checkedQC)
+                        Text("QC")
+                    }
+                }
+                Button(action: {
+                    self.checkedPEI.toggle()
+                })
+                {
+                    HStack {
+                        CheckBoxView(checked: $checkedQC)
+                        Text("PEI")
+                    }
+                }
+                Button(action: {
+                    self.checkedNB.toggle()
+                })
+                {
+                    HStack {
+                        CheckBoxView(checked: $checkedQC)
+                        Text("NB")
+                    }
+                }
+                Button(action: {
+                    self.checkedNS.toggle()
+                })
+                {
+                    HStack {
+                        CheckBoxView(checked: $checkedQC)
+                        Text("NS")
+                    }
+                }
+                Button(action: {
+                    self.checkedNL.toggle()
+                })
+                {
+                    HStack {
+                        CheckBoxView(checked: $checkedQC)
+                        Text("NL")
+                    }
+                }
+                Button(action: {
+                    self.checkedMB.toggle()
+                })
+                {
+                    HStack {
+                        CheckBoxView(checked: $checkedQC)
+                        Text("MB")
+                    }
+                }
+                Button(action: {
+                    self.checkedSK.toggle()
+                })
+                {
+                    HStack {
+                        CheckBoxView(checked: $checkedQC)
+                        Text("SK")
+                    }
+                }
+                
+            }
+            HStack(alignment:.top) {
+                Button(action: {
+                    self.checkedAB.toggle()
+                })
+                {
+                    HStack {
+                        CheckBoxView(checked: $checkedQC)
+                        Text("AB")
+                    }
+                }
+                Button(action: {
+                    self.checkedBC.toggle()
+                })
+                {
+                    HStack {
+                        CheckBoxView(checked: $checkedQC)
+                        Text("BC")
+                    }
+                }
+                Button(action: {
+                    self.checkedTerr.toggle()
+                })
+                {
+                    HStack {
+                        CheckBoxView(checked: $checkedQC)
+                        Text("Territories")
+                    }
                 }
             }
         }
+        
     }
 
     private func addItem() {
